@@ -1,0 +1,12 @@
+import os
+
+# Get the current working directory
+cwd = os.getcwd()
+print("Current working directory:", cwd)
+
+# Check if the file exists
+file_path = os.path.join(cwd, 'SF_train_prod_prepared.csv')
+if os.path.exists(file_path):
+    print("File found at:", file_path)
+else:
+    print("File not found.")
